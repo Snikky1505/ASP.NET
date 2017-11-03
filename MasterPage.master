@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>1512501170 - Nikko Handiarto</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="content" style="background-image:url(Gambar/LOU.jpg)">
+<form runat="server">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <asp:ContentPlaceHolder ID="header2" runat="server"></asp:ContentPlaceHolder>
+
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <table style="width:910px;height: 105px;" >
+                    <tr>
+                        <td></td>
+                        <td style="text-align:center;">
+                            <h1 aria-orientation="horizontal">
+                                <asp:LinkButton runat="server" Text="Snikky's Book" CssClass="nyanya" ForeColor="White"/>
+                            </h1>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu">
+            <ul>
+                <li class="first">
+                    <asp:LinkButton ID="lbtnHome" runat="server" PostBackUrl="~/Default.aspx">HOME</asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="lbtnEntryDataMaster" runat="server" PostBackUrl="~/Konteks/MasterBuku.aspx">Data Master</asp:LinkButton>
+                    
+                </li>
+                <li>
+                    <asp:LinkButton ID="lbtnEntryJenisBuku" runat="server" PostBackUrl="~/Konteks/JenisBuku.aspx">Data Buku</asp:LinkButton>
+                </li>
+            </ul>
+            <br class="clearfix" />
+        </div>
+    </div>
+    <div id="page">
+            <div id="content">
+                <asp:ContentPlaceHolder runat="server" ID="contentutama" />
+            </div>
+        </div>
+    <!-- Wrapper 2 -->
+    <div id="wrapper2">
+        <div id="splash">
+            <asp:AdRotator runat="server" Height="230px" Width="960px" DataSourceID="Banner_Source"/>
+            <asp:XmlDataSource ID="Banner_Source" runat="server" DataFile="~/XML_Banner.xml"></asp:XmlDataSource>
+        </div>
+        
+    </div>
+</form>
+    <div id="footer">
+        Copyright &copy; 2017 - Snikky All Right Reserved.
+    </div>
+</body>
+</html>
