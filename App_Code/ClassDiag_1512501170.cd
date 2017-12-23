@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="clsKategori">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAEAAAAgACAAQAAAAIAAAQAAgIAAAQCAAAAAAAA=</HashCode>
+      <FileName>App_Code\clsKategori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsBarang">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAACAEAAAAACDAAAAAAQIEEBAAIgCAAAyCABAAEAAA=</HashCode>
+      <FileName>App_Code\clsBarang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsPengguna">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAkAAAABACAAAABAgIAADBAAIoAAACCAAAAAACA=</HashCode>
+      <FileName>App_Code\clsPengguna.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsPromo">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACAEAAAAAECAAAAAAAIAAAAAIoAAAACAAAAAAAAA=</HashCode>
+      <FileName>App_Code\clsPromo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsPesan">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAACAAAAAQAEAAABBAAgAAAAQAAAAAAAAA=</HashCode>
+      <FileName>App_Code\clsPesan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsDetilPesan">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAAAAAAAAAIAAAAAIAAgAAQAAAAAAAAA=</HashCode>
+      <FileName>App_Code\clsDetilPesan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsItemKereta">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwBACAEAAAAAEBAAAAAAQAEEBAAIqAAAACCAAAJEgBA=</HashCode>
+      <FileName>App_Code\clsItemKereta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsKereta">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAEAAAEAAAQAAAAAAgQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\clsKereta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

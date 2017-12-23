@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/MKatalogOnline.master.cs" Inherits="MKatalogOnline" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Katalog Online - Nikko Handiarto</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form runat="server">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <asp:LinkButton runat="server" Text="Katalog Online" PostBackUrl="~/Default.aspx" />
+                </h1>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu">
+            <ul>
+                <li class="first">
+                    <asp:LinkButton ID="lbtnHome" runat="server" PostBackUrl="~/Default.aspx">HOME</asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="lbtnLogin" runat="server" PostBackUrl="~/Login.aspx">LOGIN</asp:LinkButton>
+                    <asp:LinkButton ID="lbtnLogout" runat="server" OnClick="lbtnLogout_Click">LOGOUT</asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="lbtnListKereta" runat="server"
+                                    PostBackUrl="~/DataBelanja/KeranjangBelanja.aspx">LIST KERETA BELANJA
+                    </asp:LinkButton>
+                </li>
+                <li class="last">&nbsp;<asp:Label ID="lblKet" runat="server" Text="Selamat Datang, "></asp:Label>
+                    <asp:Label ID="lblUsername" runat="server" Text="USERNAME"></asp:Label>
+                </li>
+            </ul>
+            <br class="clearfix" />
+        </div>
+    </div>
+
+    <!-- Wrapper 2 -->
+    <div id="wrapper2">
+        <div id="splash">
+            <asp:AdRotator runat="server" Height="230px" Width="960px" DataSourceID="Banner_Source"/>
+            <asp:XmlDataSource ID="Banner_Source" runat="server" DataFile="~/XML_Banner.xml"></asp:XmlDataSource>
+        </div>
+        <div id="page">
+            <div id="content">
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <div class="auto-style1">
+                                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                            StaticDisplayLevels="2" BackColor="#FFFBD6" 
+                            DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
+                            Font-Names="Verdana" Font-Size="1em" ForeColor="#990000" 
+                            StaticSubMenuIndent="10px">
+                            <StaticSelectedStyle BackColor="#FFCC66" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                            <DynamicMenuStyle BackColor="#FFFBD6" />
+                            <DynamicSelectedStyle BackColor="#FFCC66" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        </asp:Menu>
+                            </div>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                <asp:ContentPlaceHolder runat="server" ID="MainContent" >
+                            
+                                </asp:ContentPlaceHolder>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>
+    <div id="footer">
+        Copyright &copy; 2017 - Snikky All Right Reserved.
+    </div>
+</body>
+</html>
