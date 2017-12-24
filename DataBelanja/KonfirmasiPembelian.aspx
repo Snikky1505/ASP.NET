@@ -38,6 +38,7 @@
             <td colspan="3"><h4>
                 <div class="auto-style1">
                     <u>DATA PEMBELI</div>
+                <div class="auto-style1">
                 <asp:DetailsView ID="dvPembeli" runat="server" Height="50px" Width="210px" AutoGenerateRows="False" CellPadding="4" EnableModelValidation="True" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" />
                 <CommandRowStyle BackColor="#FFFFC0" Font-Bold="True" />
@@ -53,6 +54,7 @@
                 <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
                 <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
                 </asp:DetailsView>
+                </div>
                 </u></h4></td>
         </tr>
         <tr>
@@ -95,9 +97,9 @@
         </tr>
         <tr>
             <td colspan="3" class="auto-style1">
-                <asp:Button ID="btnYaSimpan" runat="server" Text="Ya, Tagih dan Kirim Barangnya" />
-                <asp:Button ID="btnTidak" runat="server" Text="Tidak, Saya Ingin Batal" />
-                <asp:Button ID="btnBelanjaLagi" runat="server" Text="Saya Masih Ingin Mengubah Daftar Belanja" />
+                <asp:Button ID="btnYaSimpan" runat="server" Text="Ya, Tagih dan Kirim Barangnya" OnClick="btnYaSimpan_Click"/>
+                <asp:Button ID="btnTidak" runat="server" Text="Tidak, Saya Ingin Batal" OnClick="btnTidak_Click"/>
+                <asp:Button ID="btnBelanjaLagi" runat="server" Text="Saya Masih Ingin Mengubah Daftar Belanja" OnClick="btnBelanjaLagi_Click"/>
             </td>
         </tr>
     </table>

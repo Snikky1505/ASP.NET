@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td colspan="3">
-                <asp:Button ID="btnKonfirmasi" runat="server" Text="KONFIRMASI PEMBELIAN" />
+                <asp:Button ID="btnKonfirmasi" runat="server" Text="KONFIRMASI PEMBELIAN" OnClick="btnKonfirmasi_Click"/>
             </td>
         </tr>
         <tr>
@@ -111,7 +111,7 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                <asp:Button ID="btnUbah" runat="server" Text="UBAH JUMLAH BARANG" />
+                                <asp:Button ID="btnUbah" runat="server" Text="UBAH JUMLAH BARANG" OnClick="btnUbah_Click" />
                             </td>
                         </tr>
                     </table>

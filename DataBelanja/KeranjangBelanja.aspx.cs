@@ -49,10 +49,8 @@ public partial class DataBelanja_KerangjangBelanja : System.Web.UI.Page
         double Total = 0;
         for (x = 0; x <= gvKeranjang.Rows.Count - 1; x++)
         {
-            JumlahItem +=
-                                System.Convert.ToInt32(gvKeranjang.Rows[x].Cells[6].Text.ToString().Replace("Rp", ""));
-            Total +=
-                                System.Convert.ToDouble(gvKeranjang.Rows[x].Cells[7].Text.ToString().Replace("Rp", ""));
+            JumlahItem += System.Convert.ToInt32(gvKeranjang.Rows[x].Cells[4].Text.ToString().Replace("%", "").Replace(" ", ""));
+            Total += System.Convert.ToDouble(gvKeranjang.Rows[x].Cells[5].Text.ToString().Replace("Rp", "").Replace(".", ""));
         }
         lblJumlahItem.Text = JumlahItem.ToString();
         lblTotalBayar.Text = Total.ToString();
