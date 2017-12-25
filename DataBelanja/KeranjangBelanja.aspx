@@ -39,7 +39,7 @@
         <tr>
             <td colspan="3">
                 <asp:GridView ID="gvKeranjang" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False"
-                    OnSelectedIndexChanged="gvKeranjang_SelectedIndexChanged" EnableModelValidation="True" Width="535px">
+                    OnSelectedIndexChanged="gvKeranjang_SelectedIndexChanged" OnRowDeleting="gvKeranjang_RowDeleting" Width="535px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:BoundField HeaderText="No"></asp:BoundField>
