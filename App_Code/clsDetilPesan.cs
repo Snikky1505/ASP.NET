@@ -67,7 +67,7 @@ public class clsDetilPesan
         using (SqlConnection conn = new SqlConnection(StrConn))
         {
             String Query =
-               "INSERT INTO detil_pesan(KdPesan,KdBrg,HrgBrg,JmlPesan)" + "VALUES(@1,@2,@3,@4)";
+               "INSERT INTO detil_pesan(KdPesan,KdBrg,HrgPesan,JmlPesan)" + "VALUES(@1,@2,@3,@4)";
             SqlCommand cmd = new SqlCommand(Query, conn);
             cmd.Parameters.AddWithValue("@1", FKdPesan);
             cmd.Parameters.AddWithValue("@2", FKdBrg);
