@@ -25,12 +25,16 @@
             <td class="auto-style3">Cari Nama Pengguna</td>
             <td class="auto-style5"></td>
             <td class="auto-style2">
-                <asp:TextBox ID="txtCariNama" runat="server" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox ID="txtCariNama" runat="server" OnTextChanged="txtCariNama_TextChanged" AutoPostBack="True"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style2" colspan="3">
-                <asp:DataList ID="dlPengguna" runat="server" BorderWidth="1px" CellPadding="1" CellSpacing="1" RepeatDirection="Horizontal" Visible="False" >
+                <asp:DataList ID="dlPengguna" runat="server" CellPadding="4" RepeatDirection="Horizontal" OnSelectedIndexChanged="dlPengguna_SelectedIndexChanged" Visible="False" ForeColor="#333333" >
+                    <AlternatingItemStyle BackColor="White" />
+                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <ItemStyle BackColor="#FFFBD6" ForeColor="#333333" />
                     <ItemTemplate>
                         <table class="auto-style12" border="1">
                             <tr>
@@ -81,6 +85,7 @@
                             </tr>
                         </table>
                     </ItemTemplate>
+                    <SelectedItemStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
                 </asp:DataList>
             </td>
         </tr>
