@@ -31,6 +31,22 @@ public partial class Report_LaporanKategori : System.Web.UI.Page
             CrystalReportViewer1.ReportSource = rptDoc;
         }
     }
+    protected void lbpdf_Click(object sender, ImageClickEventArgs e)
+    {
+        BindReport();
+        rptDoc.ExportToHttpResponse(
+            CrystalDecisions.Shared.ExportFormatType.PortableDocFormat,
+            Response, true, "LaporanKategori");
+        rptDoc.Refresh();
+    }
+    protected void lbrtf_Click(object sender, ImageClickEventArgs e)
+    {
+        BindReport();
+        rptDoc.ExportToHttpResponse(
+            CrystalDecisions.Shared.ExportFormatType.RichText,
+            Response, true, "LaporanKategori");
+        rptDoc.Refresh();
+    }
     protected void lbexcel_Click(object sender, ImageClickEventArgs e)
     {
         BindReport();
